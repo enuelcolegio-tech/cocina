@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Enuel</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span>&lt;EH /&gt;</span>
+    </div>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="seccion inicio">
+      <div class="inicio-texto">
+        <h1>Hola, soy <span class="resaltado">Enuel</span></h1>
+        <p>
+          Estudiante de desarrollo web. Me gusta crear páginas con HTML, CSS
+          y un poco de JavaScript. Este es mi portfolio.
+        </p>
+        <a href="#proyectos" class="btn">Ver mis proyectos</a>
+      </div>
+      <div class="inicio-imagen">
+        <!-- Reemplaza la imagen por una tuya en /img -->
+        <img src="https://via.placeholder.com/300x300" alt="Foto de Enuel" />
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion proyectos">
+      <h2>Proyectos</h2>
+      <p class="descripcion-seccion">
+        Estos son algunos de los trabajos que hice en clase y por mi cuenta.
+      </p>
+
+      <div class="grid-proyectos">
+        <!-- Tarjeta 1 -->
+        <article class="card-proyecto">
+          <h3>Proyecto 1: Página de ejemplo</h3>
+          <p>
+            Una página estática hecha con HTML5 y CSS, con estructura semántica y diseño responsivo.
+          </p>
+          <p class="tecnologias">Tecnologías: HTML, CSS</p>
+          <a href="#" class="link-proyecto" target="_blank">Ver proyecto</a>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="card-proyecto">
+          <h3>Proyecto 2: Formulario de contacto</h3>
+          <p>
+            Formulario con validación básica de email y campos requeridos, pensado para una web escolar.
+          </p>
+          <p class="tecnologias">Tecnologías: HTML, CSS, JS</p>
+          <a href="#" class="link-proyecto" target="_blank">Ver proyecto</a>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="card-proyecto">
+          <h3>Proyecto 3: Mini landing page</h3>
+          <p>
+            Landing page simple usando Flexbox y Grid para practicar maquetación.
+          </p>
+          <p class="tecnologias">Tecnologías: HTML, CSS (Flexbox, Grid)</p>
+          <a href="#" class="link-proyecto" target="_blank">Ver proyecto</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion contacto">
+      <h2>Contacto</h2>
+      <p class="descripcion-seccion">
+        Si querés hablar conmigo sobre algún proyecto o trabajo, completá este formulario:
+      </p>
+
+      <form class="form-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+
+      <div class="contacto-extra">
+        <p>También podés encontrarme en:</p>
+        <ul>
+          <li><a href="#" target="_blank">Mi GitHub</a></li>
+          <li><a href="#" target="_blank">Mi Instagram</a></li>
+          <li><a href="mailto:tuemail@ejemplo.com">Enviar email directo</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 - Portfolio de Enuel</p>
+  </footer>
+</body>
+</html>

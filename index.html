@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domina la Cocina Desde Cero | Curso para Principiantes</title>
+  <style>
+    /* Reset y estilos base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff9f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+      color: #e63946;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #ffd166 0%, #ff9e6d 100%);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #2b2d42;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #2b2d42;
+    }
+
+    /* Botón CTA */
+    .btn {
+      display: inline-block;
+      background-color: #e63946;
+      color: white;
+      padding: 14px 32px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background-color: #d90429;
+      transform: translateY(-3px);
+    }
+
+    /* Beneficios */
+    .benefits {
+      background-color: white;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .benefit-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .benefit-card h3 {
+      color: #e63946;
+    }
+
+    /* Testimonios */
+    .testimonials {
+      background-color: #f8f9fa;
+    }
+
+    .testimonial {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    .author {
+      font-weight: bold;
+      color: #e63946;
+      margin-top: 10px;
+    }
+
+    .diploma{
+
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+
+    }
+
+    .diploma img{ margin-top: 25px;
+        width: 250px;
+    margin-bottom: 12px;
+    }
+
+    /* CTA Final */
+    .cta-section {
+      text-align: center;
+      background: linear-gradient(135deg, #ff9e6d 0%, #ffd166 100%);
+      padding: 80px 20px;
+    }
+
+    .cta-section h2 {
+      color: #2b2d42;
+      font-size: 2.4rem;
+    }
+
+    .cta-section p {
+      color: #2b2d42;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2b2d42;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+
+
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>¿Cansado de quemar el arroz o servir comida aburrida?</h1>
+      <p>Descubre cómo cocinar con confianza, amor y sabor… ¡incluso si nunca has puesto un pie en la cocina!</p>
+      <a href="https://wa.me/522291457662?text=Los%20encontr%C3%A9%20en%20internet,%20quiero%20hacer%20el%20curso." class="btn" target="_blank">¡Quiero empezar a cocinar!</a>
+    </div>
+  </section>
+  <section style="background-color: #fff; padding: 80px 20px; text-align: center;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 style="color: #e63946; font-size: 2.2rem; margin-bottom: 30px;">¿Te suena esto?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 25px;">Abrir la nevera y no saber qué cocinar… otra vez.</p>
+    <p style="font-size: 1.1rem; margin-bottom: 25px;">Pedir delivery por tercera vez en la semana, con culpa y sin ganas.</p>
+    <p style="font-size: 1.1rem; margin-bottom: 25px;">Quemar el arroz, pasarte de sal, o servir algo que hasta tú miras con cara de “no otra vez”.</p>
+    <p style="font-size: 1.1rem; margin-bottom: 25px;">Soñar con cocinar como esos chefs que ves en videos… pero creer que “eso no es para ti”.</p>
+    <p style="font-size: 1.1rem; font-style: italic; color: #555;">
+      No es que no puedas cocinar… es que <strong>nadie te enseñó de verdad</strong>.
+    </p>
+  </div>
+</section>
+<section style="background: linear-gradient(135deg, #ffd166 0%, #ff9e6d 100%); padding: 80px 20px; text-align: center; color: #2b2d42;">
+  <div class="container" style="max-width: 900px; margin: 0 auto;">
+    <h2 style="font-size: 2.4rem; margin-bottom: 20px;">Imagina esto en cambio…</h2>
+    <p style="font-size: 1.2rem; margin-bottom: 30px;">
+      Abres la nevera, eliges 3 ingredientes… y en 20 minutos tienes un plato que huele a hogar, sabe a amor y sorprende hasta a ti mismo.
+    </p>
+    <p style="font-size: 1.2rem; margin-bottom: 30px;">
+      Tus seres queridos te dicen: “¡Otra vez? ¡Pero si está riquísimo!”.
+    </p>
+    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); margin-top: 30px;">
+      <h3 style="color: #e63946; margin-bottom: 15px;">Bienvenido a <strong>“Cocina con Corazón: Tu Primer Curso de Verdad”</strong></h3>
+      <p style="font-size: 1.1rem;">
+        Un curso diseñado para principiantes absolutos, donde cada paso está pensado para que <strong>nunca te sientas perdido</strong>.  
+        Sin tecnicismos, sin ingredientes imposibles… solo recetas reales, amor por la cocina y resultados desde el primer día.
+      </p>
+    </div>
+  </div>
+</section>
+  <!-- Beneficios -->
+  <section class="benefits">
+    <div class="container">
+      <h2>¿Qué vas a ganar con este curso?</h2>
+      <p>No es solo aprender recetas… es transformar tu relación con la comida y contigo mismo.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <img src="cocinaenuel.png" alt="cocinando con confianza">
+          <h3>Confianza en la cocina</h3>
+          <p>Deja de depender de delivery. Cocina platos que enamoran… ¡aunque empieces de cero!</p>
+        </div>
+        <div class="benefit-card">
+            <img src="cocinaenuel2.png" alt="cocina familiar">
+          <h3>Conexión familiar</h3>
+          <p>Sorprende a tu familia con cenas hechas con amor. Cada bocado será un recuerdo.</p>
+        </div>
+        <div class="benefit-card">
+            <img src="cocinaenuel3.png" alt="recetas">
+          <h3>Recetas fáciles y reales</h3>
+          <p>Sin ingredientes raros ni técnicas imposibles. Solo lo que necesitas, cuando lo necesitas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section style="background-color: #f8f9fa; padding: 80px 20px; text-align: center;">
+  <div class="container" style="max-width: 900px; margin: 0 auto;">
+    <h2 style="color: #e63946; font-size: 2.2rem; margin-bottom: 30px;">Hola, soy Enuel 👋</h2>
+    
+  
+    
+    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+      Hace unos años, yo también quemaba el arroz, le tenía miedo a la sartén y creía que cocinar era “cosa de genios”.
+    </p>
+    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+      Hoy, después de años enseñando a cientos de personas como tú, sé una cosa con certeza: <strong>cualquiera puede cocinar… si le enseñan con paciencia, amor y sin juzgar</strong>.
+    </p>
+<div class="diploma">
+    <img src="diploma.png" alt="">
+    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+      Soy chef formado, pero sobre todo… soy amante de la cocina casera y mi misión es que <strong>nadie más se sienta inseguro frente a una olla</strong>.
+    </p>
+    </div>
+    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-top: 25px;">
+      <p style="font-weight: bold; color: #e63946; margin: 0;">
+        “No te enseño a imitar a los chefs… te enseño a confiar en ti mismo en la cocina.”
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>Historias reales de personas como tú</h2>
+      <div class="testimonial">
+        <p>"Nunca supe cocinar. Hoy preparo el mole de mi abuela y mis hijos me piden que cocine todos los días. ¡Este curso cambió mi vida!"</p>
+        <div class="author">— Laura, mamá de 2</div>
+      </div>
+      <div class="testimonial" style="margin-top: 30px;">
+        <p>"Empecé por curiosidad… terminé descubriendo una pasión. Ahora cocino para mis amigos y hasta doy pequeñas cenas en casa."</p>
+        <div class="author">— Carlos, principiante hace 3 meses</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Imagen sugerida -->
+  <!-- "persona sonriendo mientras cocina en su cocina moderna" -->
+
+  <!-- CTA Final -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Listo para convertirte en el chef de tu propia vida?</h2>
+      <p>Las plazas son limitadas. No dejes que el miedo o la duda te roben esta oportunidad de disfrutar, compartir y crecer.</p>
+      <a href="https://wa.me/522291457662?text=Los%20encontr%C3%A9%20en%20internet,%20quiero%20hacer%20el%20curso." class="btn" target="_blank">Sí, ¡quiero inscribirme ahora!</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Curso de Cocina para Principiantes • Hecho con ❤️ para ti</p>
+      <p>Teléfono de contacto: <a href="https://wa.me/522291457662" style="color:#ffd166;">229 145 7662</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

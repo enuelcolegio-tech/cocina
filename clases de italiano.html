@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aprendé Italiano con Nosotros</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #1f2f8a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .cta-btn {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      background-color: #1f2f8a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #152266;
+    }
+
+    .benefits {
+      background: white;
+      padding: 2rem;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .benefit {
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background: #fff;
+    }
+
+    .benefit h3 {
+      margin-top: 0;
+      color: #1f2f8a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: #f0f0f0;
+    }
+
+    form {
+      margin-top: 2rem;
+      max-width: 400px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background: #1f2f8a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #152266;
+    }
+
+    /* Página de agradecimiento */
+    #gracias {
+      display: none;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #f7f7f7;
+    }
+
+    #gracias .box {
+      background: white;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    #gracias h1 {
+      color: #1f2f8a;
+    }
+
+    #gracias a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #1f2f8a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    #gracias a:hover {
+      background: #152266;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- PÁGINA PRINCIPAL -->
+  <div id="inicio">
+    <header>
+      <h1>¡Aprendé Italiano Hoy!</h1>
+      <p>Clases online con profesores nativos – todos los niveles</p>
+    </header>
+
+    <section class="hero">
+
+      <!-- ⭐ Aquí agregué tu imagen ⭐ -->
+      <img src="e:\intensificacion 2025\italiano.jpg" alt="Clases de italiano">
+
+      <h2>¿Querés hablar italiano con fluidez?</h2>
+      <p>Sumate a nuestras clases dinámicas y personalizadas. Ideal para viajes, trabajo o cultura.</p>
+
+      <button class="cta-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+        Reservá tu clase gratis
+      </button>
+    </section>
+
+    <section class="benefits">
+      <div class="benefit">
+           <img src="e:\intensificacion 2025\profes.jpg" alt="Clases de italiano">
+
+        <h3>Profesores Nativos</h3>
+        <p>Aprendé con docentes italianos certificados.</p>
+      </div>
+      <div class="benefit">
+            <img src="e:\intensificacion 2025\online.jpg" alt="Clases de italiano">
+        <h3>Clases Online</h3>
+        <p>Desde donde estés, en el horario que mejor te quede.</p>
+      </div>
+      <div class="benefit">
+         <img src="e:\intensificacion 2025\material.jpg" alt="Clases de italiano">
+        <h3>Material Incluido</h3>
+        <p>Acceso a libros, audios y ejercicios sin costo adicional.</p>
+      </div>
+      <div class="benefit">
+          <img src="e:\intensificacion 2025\niveles.jpg" alt="Clases de italiano">
+        <h3>Todos los Niveles</h3>
+        <p>Desde principiantes hasta avanzados.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="hero">
+      <h2>Solicitá tu clase de prueba gratis</h2>
+
+      <form onsubmit="enviarFormulario(event)">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo electrónico" required />
+        <textarea name="mensaje" placeholder="Contanos tu interés" rows="4"></textarea>
+        <input type="submit" value="Enviar solicitud" />
+      </form>
+    </section>
+
+  
+  </div>
+
+  <!-- PÁGINA DE GRACIAS -->
+  <section id="gracias">
+    <div class="box">
+      <h1>¡Tu solicitud fue enviada!</h1>
+      <p>Gracias por visitar esta página. Nos pondremos en contacto con vos a la brevedad.</p>
+      <a href="#" onclick="volverInicio()">Volver al inicio</a>
+    </div>
+  </section>
+
+  <script>
+    function enviarFormulario(e) {
+      e.preventDefault();
+      document.getElementById("inicio").style.display = "none";
+      document.getElementById("gracias").style.display = "flex";
+    }
+
+    function volverInicio() {
+      document.getElementById("gracias").style.display = "none";
+      document.getElementById("inicio").style.display = "block";
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+</body>
+</html>
+
